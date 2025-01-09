@@ -1,11 +1,13 @@
 def Floyd(n):
     current = 1
-    row = 1
-    for i in range (1, n):
-        for j in range (1, i):
+    for i in range(1, n):
+        for j in range(1, i):
             print(current, end=" ")
             current += 1
-        if (current > n): break;
-        print("\n")
+        if current > n:
+            break
+        print("")
 
-Floyd(15)
+
+n = int(input("Nhập n: "))
+Floyd(n)
